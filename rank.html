@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>提交作业</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/run.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <style>
+  body{background: #333333; color: #ffffff; padding: 0; margin: 0;}
+  /*一行，宽度是100%，类似BS里的row*/
+  .ro{width: 100%; }
+  /*一列，类似BS里的col-*/
+  .col{float: left; height: 58px;line-height: 58px; text-align: center;background: #000000; border-bottom: 2px solid #eeeeee;}
+  /*最左边的那个三角列*/
+  .triangle{width: 8%;}
+  /*头像列*/
+  .avatar{width: 10%;}
+  /*信息列*/
+  .info{width: 30%; line-height: normal;}
+  /*跑步距离列*/
+  .distance{width:52%;}
+
+  .na{line-height: 20px;}
+  .ban{line-height: 29px; color: #787878;}
+  /*大小字*/
+  big{font-size: 30px; font-weight: bold;}
+  small{font-size: 12px;}
+  </style>
+
+  <body>
+
+<div class="ro">
+  <div class="col triangle">1</div>
+  <div class="col avatar">
+    <img src="img/avatar.png" class="imgRes imgCenter imgCircle">
+  </div>
+  <div class="col info">
+    <div class="na">布吉岛</div>
+    <div class="ban">来自38号班</div>
+  </div>
+  <div class="col distance"><big>123.45</big><small>KM</small></div>
+  <!--由于用了异常蛋疼的float, 下面这行代码就显得异常重要！切记！-->
+  <div clear="both;"></div>
+</div>
+
+
+
+<div class="ro">
+  <div class="col triangle">2</div>
+  <div class="col avatar">
+    <img src="img/avatar.png" class="imgRes imgCenter imgCircle">
+  </div>
+  <div class="col info">
+    <div class="na">布吉岛</div>
+    <div class="ban">来自38号班</div>
+  </div>
+  <div class="col distance"><big>123.45</big><small>KM</small></div>
+  <div clear="both;"></div>
+</div>
+
+
+
+
+<div id="footer" style="">
+     <div class="foot center">发现跑班</div>
+     <div class="foot center">提交作业</div>
+     <div class="foot center">炮友中心</div>
+     <div clear="both;"></div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('h1').css("display", "none");
+});
+</script>  
+
+
+  </body>
+</html>
